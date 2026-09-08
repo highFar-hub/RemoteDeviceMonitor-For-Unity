@@ -1,0 +1,7 @@
+device-api-key.txt
+control-api-key.txt
+*-secrets.txt
+.env
+.env.*
+.vercel/
+
