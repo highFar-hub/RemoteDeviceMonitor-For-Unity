@@ -1,0 +1,3 @@
+export function renderVideo(device){return `<div class="section-title">视频控制</div><div class="controls">${[1,2,3,4,5].map(v=>`<button ${device.online?'':'disabled'} data-action="play_video" data-video="${v}">播放 ${v}</button>`).join('')}</div>`;}
+export function bindVideo(card,device,send){card.querySelectorAll('[data-action="play_video"]').forEach(button=>button.onclick=()=>send(device.device_id,'play_video',{video:Number(button.dataset.video)}));}
+export function videoMetrics(device){return [{name:'当前视频',value:device.current_video??'-'},{name:'播放状态',value:device.is_playing?'播放中':'未播放'},{name:'帧率',value:device.fps?Number(device.fps).toFixed(1)+' FPS':'-'}];}
