@@ -1,6 +1,6 @@
 # Unity 远程监控 Package 使用说明
 
-监控网页：https://unity-device-monitor-vercel.vercel.app/
+监控网页：https://your-project.vercel.app/
 
 ## 新项目接入
 
@@ -13,7 +13,7 @@
     Project Id：每个作品唯一，例如 mushroom-three-screen
     Project Name：网站显示的作品名
     Device Display Name：通常留空，自动使用电脑名
-    Server Base Url：https://unity-device-monitor-vercel.vercel.app
+    Server Base Url：https://your-project.vercel.app/
     Report Interval Seconds：30
     Command Poll Interval Seconds：5
     Receive Commands：勾选
