@@ -84,15 +84,3 @@ Keep Between Scenes 勾选后，组件会跨场景保留。建议只在启动场
     Supabase Secret Key（sb_secret_ 开头）：Vercel 访问数据库
     DEVICE_API_KEY：Unity 设备访问服务器
     CONTROL_API_KEY：网页下发控制命令
-
-不要把 Vercel Token 或 Supabase Secret Key 放进 Unity 或打包程序。
-
-## 后续扩展
-
-可继续增加暂停、重启、设备分组、操作日志、CPU/内存/磁盘、截图、每设备独立密钥和素材更新。
-
-素材文件建议存对象存储，数据库只保存下载地址、版本、大小和哈希；Unity 下载并校验成功后再替换。
-
-Vercel Hobby 适合个人 Demo；正式商业运营前需重新确认服务条款和额度。
-
-完整详细版位于：D:\Unity project\Unity远程监控Package使用说明.md
