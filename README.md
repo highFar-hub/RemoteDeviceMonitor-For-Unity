@@ -168,19 +168,7 @@ monitor.ClearError();
 
 这些密钥不是同一个值，不应互相复用。
 
-## 安全提醒
-
-公开仓库中不要提交：
-
-- `.env`、`.env.local` 等环境变量文件
-- `device-api-key.txt`
-- Vercel Token
-- Supabase Service Role / Secret Key
-- 真实的 `DEVICE_API_KEY` 或 `CONTROL_API_KEY`
-- `.vercel/` 部署缓存和项目绑定信息
-
-仓库中的服务器地址、设备 ID 和密钥都应使用示例值。若密钥已经提交到 Git
-历史中，仅删除文件不够，还应立即在对应平台轮换密钥。
+仓库中的服务器地址、设备 ID 和密钥都应使用示例值。
 
 ## 当前定位
 
